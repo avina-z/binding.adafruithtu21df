@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<binding:binding id="adafruithtu21df"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:binding="http://eclipse.org/smarthome/schemas/binding/v1.0.0"
+        xsi:schemaLocation="http://eclipse.org/smarthome/schemas/binding/v1.0.0 http://eclipse.org/smarthome/schemas/binding-1.0.0.xsd">
+
+    <name>adafruit HTU21D-F Binding</name>
+    <description>This is the binding for adafruit HTU21D-F Sensor
+                 This I2C digital humidity sensor is an accurate and intelligent Humidity and Temperature Sensor.
+                 It has a typical accuracy of ±2% with an operating range that's optimized from 5% to 95% RH. 
+                 Operation outside this range is still possible - just the accuracy might drop a bit. 
+                 The temperature output has an accuracy of ±1°C from -30~90°C. 
+    </description>
+    <author>Alberto Avina</author>
+
+</binding:binding>

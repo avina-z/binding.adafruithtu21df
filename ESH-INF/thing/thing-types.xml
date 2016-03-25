@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="adafruithtu21df"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+        xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+
+    <!-- Sample Thing Type -->
+    <thing-type id="adafruithtu21df">
+        <label>Adafruit HTU21DF Binding</label>
+        <description>Provides Temperature and Humidity readings from adafruit HTU21D-F Sensor</description>
+
+        <channels>
+            <channel id="temperature" typeId="temperature"/>
+            <channel id="humidity" typeId="humidity"/>
+        </channels>
+        
+        <config-description>
+        <parameter name="location" type="text" required="true">
+            <label>Location</label>
+            <description>Location of the sensor. Documentation only.
+            </description>
+        </parameter>
+        <parameter name="refresh" type="integer">
+            <label>Refresh interval</label>
+            <description>Specifies the refresh interval in seconds.</description>
+            <default>60</default>
+        </parameter>
+        </config-description>
+        
+    </thing-type>
+
+    <!-- Temperature Channel Type -->
+    <channel-type id="temperature">
+        <item-type>Number</item-type>
+        <label>Temperature</label>
+        <description>Current temperature in degrees celsius</description>
+        <state readOnly="true" />
+    </channel-type>
+
+    <!-- Humidity Channel Type -->
+    <channel-type id="humidity">
+        <item-type>Number</item-type>
+        <label>Humidity</label>
+        <description>Current relative humidity in percentage</description>
+        <state readOnly="true" />
+    </channel-type>
+</thing:thing-descriptions>
